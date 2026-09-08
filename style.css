@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    background-color: #09091a;
+    align-items: center;
+
+
+}
+/*animation general settings*/
+.animateletter{
+    font-family: "Lato",sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: aqua;
+    border: #09091a solid 5px;
+    
+
+}
+/*span animateletter settings*/
+.animateletter span{
+    display: inline-block;
+    animation: animateletter ease 5.5s infinite;
+
+}
+.animateletter span:nth-child(1){animation-delay: 0s;}
+.animateletter span:nth-child(2){animation-delay: 0.1s;}
+.animateletter span:nth-child(3){animation-delay: 0.2s;}
+.animateletter span:nth-child(4){animation-delay: 0.3s;}
+.animateletter span:nth-child(5){animation-delay: 0.4s;}
+.animateletter span:nth-child(6){animation-delay: 0.5s;}
+.animateletter span:nth-child(7){animation-delay: 0.5s;}
+.animateletter span:nth-child(8){animation-delay: 0.5s;}
+.animateletter span:nth-child(9){animation-delay: 0.5s;}
+@keyframes animateletter{
+    0%,100%{
+        transform: translate(0px);
+        color:rgb(118, 9, 243);
+        text-shadow: 0px 0px 20px rgb(118, 9, 243);
+       
+    }
+    25%{
+        transform:translate(-15px);
+        color: burlywood;
+        text-shadow: 0px 0px 20px burlywood;
+        
+    }
+
+    50%{
+        transform: translate(-15px);
+        color:rgb(114, 5, 124);
+        text-shadow: 0px 0px 20px rgb(114, 5, 124);
+        
+    }
+    75%{
+        transform: translate(-15px);
+        color:rgb(2, 55, 134);
+        text-shadow: 0px 0px 20px rgb(2, 55, 138);
+
+    }
+    100%{
+        transform: translate(-15px);
+        color:aqua;
+        text-shadow: aqua;
+    }
+    
+    
+    
+}
+
